@@ -1,5 +1,5 @@
-[![Clippy](https://github.com/nogibjj/rust-data-engineering/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/rust-data-engineering/actions/workflows/lint.yml)
-[![Tests](https://github.com/nogibjj/rust-data-engineering/actions/workflows/tests.yml/badge.svg)](https://github.com/nogibjj/rust-data-engineering/actions/workflows/tests.yml)
+[![Clippy](https://github.com/nogibjj/IDS706_miniproject7_xk10/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/rust-data-engineering/actions/workflows/lint.yml)
+[![Tests](https://github.com/nogibjj/IDS706_miniproject7_xk10/actions/workflows/tests.yml/badge.svg)](https://github.com/nogibjj/rust-data-engineering/actions/workflows/tests.yml)
 
 
 # Package a Python Script into a Command-Line Tool
@@ -78,7 +78,9 @@ run:
 
 all: format lint test run
 ```
-
+In order to check format and test,
+run `make format`, `make lint`, and `make test`
+<img width="706" alt="Screen Shot 2023-10-25 at 23 46 53" src="https://github.com/nogibjj/IDS706_miniproject7_xk10/assets/143849077/89e11e58-6377-4dd3-8e5a-92ba06ad8b98">
 
 ## References
 
