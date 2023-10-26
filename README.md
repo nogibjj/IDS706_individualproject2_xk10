@@ -1,5 +1,5 @@
-[![Clippy](https://github.com/nogibjj/IDS706_miniproject7_xk10/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/rust-data-engineering/actions/workflows/lint.yml)
-[![Tests](https://github.com/nogibjj/IDS706_miniproject7_xk10/actions/workflows/tests.yml/badge.svg)](https://github.com/nogibjj/rust-data-engineering/actions/workflows/tests.yml)
+[![Clippy](https://github.com/nogibjj/IDS706_miniproject7_xk10/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/IDS706_miniproject7_xk10/actions/workflows/lint.yml)
+[![Tests](https://github.com/nogibjj/IDS706_miniproject7_xk10/actions/workflows/tests.yml/badge.svg)](https://github.com/nogibjj/IDS706_miniproject7_xk10/actions/workflows/tests.yml)
 
 
 # Package a Python Script into a Command-Line Tool
