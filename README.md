@@ -1,9 +1,11 @@
 
-
 # Individual Project#2: Rust CLI Binary with SQLite
 
 ## Purpose:
 This repository hosts a Rust CLI tool that manages a SQLite database for the purpose of handling a Drinks dataset. The tool is designed to perform a sequence of operations that include extracting, transforming, loading, and querying data. It starts by downloading a dataset from a specified GitHub URL and saving it as a CSV file within the local repository. Following this, the data from the CSV file is transformed to fit the SQLite database schema and then loaded into the database. Users can then execute SQL queries through the CLI tool to interact with the database, allowing for retrieval and manipulation of the Drinks data in a structured and efficient manner.The drinks.csv dataset comprises a list of countries with corresponding average annual per capita consumption figures for beer, spirits, and wine, expressed as servings. Additionally, it includes a column for the total liters of pure alcohol consumed per person per year. 
+
+## 📺Demo video: 
+https://youtu.be/UwESNuqk_4Y
 
 ## Github Actions Workflows:
 [![Rust CI/CD](https://github.com/nogibjj/IDS706_individualproject2_xk10/actions/workflows/CICD.yml/badge.svg)](https://github.com/nogibjj/IDS706_individualproject2_xk10/actions/workflows/CICD.yml)
