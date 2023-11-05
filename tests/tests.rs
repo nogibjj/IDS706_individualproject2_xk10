@@ -1,6 +1,6 @@
 // You need to make sure your crate and rusqlite are in your dependencies in Cargo.toml
-use your_crate_name::{extract, query, transform_load};
 use rusqlite::{params, Connection, Result};
+use your_crate_name::{extract, query, transform_load};
 
 // The test module
 #[cfg(test)]
