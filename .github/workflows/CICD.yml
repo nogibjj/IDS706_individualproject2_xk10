@@ -46,10 +46,10 @@ jobs:
     - name: Lint code
       run: make lint
 
-    - name: Create BirthsDB table
+    - name: Create DrinkssDB table
       run: make create-table
 
-    - name: Insert data into BirthsDB
+    - name: Insert data into DrinksDB
       run: make create
 
     ## CRUD 
