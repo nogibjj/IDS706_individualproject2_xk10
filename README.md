@@ -15,16 +15,16 @@ This repository has CI/CD set up in Github Actions Workflows. The workflows incl
 ## Steps:
 1. Fork the repository from miniproject7
 2. Create the core functionality:  
-**Develop the functions for extracting, transforming, loading and querying data in `lib.rs` (Utilize transform_load to create a new database table from the CSV file, if it doesn't exist, and insert records; Use the query function to execute SELECT statements for reading data; Implement an Update feature for altering existing database records; Establish a Delete function to remove records, using transactions for data integrity.)
-**In main.rs, parse CLI arguments to call the appropriate function based on user input and manage errors and feedback.
+* Develop the functions for extracting, transforming, loading and querying data in `lib.rs` (Utilize transform_load to create a new database table from the CSV file, if it doesn't exist, and insert records; Use the query function to execute SELECT statements for reading data; Implement an Update feature for altering existing database records; Establish a Delete function to remove records, using transactions for data integrity.)
+* In main.rs, parse CLI arguments to call the appropriate function based on user input and manage errors and feedback.
 3. Add dependencies:
 Edit Cargo.toml to include dependencies such as rusqlite for SQLite interaction and reqwest for HTTP requests.
 5. Write tests:
-**Test CRUD operations with unit tests in tests.rs, ensuring all database interactions work as intended
-**Ensure tests can be run with `cargo test`.
+* Test CRUD operations with unit tests in tests.rs, ensuring all database interactions work as intended
+* Ensure tests can be run with `cargo test`.
 6. Local Testing and Iteration:
-**Run your code locally using `cargo run` to make sure it behaves as expected (e.g: `cargo run extract`, `cargo run transform_load`).
-**Use `cargo build` to compile the project and fix any compilation errors.
+* Run your code locally using `cargo run` to make sure it behaves as expected (e.g: `cargo run extract`, `cargo run transform_load`).
+* Use `cargo build` to compile the project and fix any compilation errors.
 
 ## Check format and test:
 In order to check format and test,
