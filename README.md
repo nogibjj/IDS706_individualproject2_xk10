@@ -3,7 +3,7 @@
 # Individual Project#2: Rust CLI Binary with SQLite
 
 ## Purpose:
-This repository hosts a Rust CLI tool that manages a SQLite database for the purpose of handling a Drinks dataset. The tool is designed to perform a sequence of operations that include extracting, transforming, loading, and querying data. It starts by downloading a dataset from a specified GitHub URL and saving it as a CSV file within the local repository. Following this, the data from the CSV file is transformed to fit the SQLite database schema and then loaded into the database. Users can then execute SQL queries through the CLI tool to interact with the database, allowing for retrieval and manipulation of the Drinks data in a structured and efficient manner.
+This repository hosts a Rust CLI tool that manages a SQLite database for the purpose of handling a Drinks dataset. The tool is designed to perform a sequence of operations that include extracting, transforming, loading, and querying data. It starts by downloading a dataset from a specified GitHub URL and saving it as a CSV file within the local repository. Following this, the data from the CSV file is transformed to fit the SQLite database schema and then loaded into the database. Users can then execute SQL queries through the CLI tool to interact with the database, allowing for retrieval and manipulation of the Drinks data in a structured and efficient manner.The drinks.csv dataset comprises a list of countries with corresponding average annual per capita consumption figures for beer, spirits, and wine, expressed as servings. Additionally, it includes a column for the total liters of pure alcohol consumed per person per year. 
 
 ## Github Actions Workflows:
 [![Rust CI/CD](https://github.com/nogibjj/IDS706_individualproject2_xk10/actions/workflows/CICD.yml/badge.svg)](https://github.com/nogibjj/IDS706_individualproject2_xk10/actions/workflows/CICD.yml)
@@ -13,13 +13,18 @@ This repository has CI/CD set up in Github Actions Workflows. The workflows incl
 3. Archive Binary: Binary is also incorporate into the Github Actions. For downloading the binary, go to Github Actions, click on one of the Workflows, go to the bottom of the page and download the file.
    
 ## Steps:
-
 1. Fork the repository from miniproject7
-
-5. Run `cargo build` to compile your changes  
-
-6. Run `cargo run` to test your modified tool
-
+2. Create the core functionality:  
+**Develop the functions for extracting, transforming, loading and querying data in `lib.rs` (Utilize transform_load to create a new database table from the CSV file, if it doesn't exist, and insert records; Use the query function to execute SELECT statements for reading data; Implement an Update feature for altering existing database records; Establish a Delete function to remove records, using transactions for data integrity.)
+**In main.rs, parse CLI arguments to call the appropriate function based on user input and manage errors and feedback.
+3. Add dependencies:
+Edit Cargo.toml to include dependencies such as rusqlite for SQLite interaction and reqwest for HTTP requests.
+5. Write tests:
+**Test CRUD operations with unit tests in tests.rs, ensuring all database interactions work as intended
+**Ensure tests can be run with `cargo test`.
+6. Local Testing and Iteration:
+**Run your code locally using `cargo run` to make sure it behaves as expected (e.g: `cargo run extract`, `cargo run transform_load`).
+**Use `cargo build` to compile the project and fix any compilation errors.
 
 ## Check format and test:
 In order to check format and test,
